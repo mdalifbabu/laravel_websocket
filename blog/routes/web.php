@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
+Route::get('/t', function () {
     event(new \App\Events\SendMessage());
-    dd('Event fired.');
+    dd('Event Run Successfully.');
 });
